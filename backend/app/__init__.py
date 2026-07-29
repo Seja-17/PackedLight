@@ -1,0 +1,1 @@
+"""PackedLight FastAPI application package."""
