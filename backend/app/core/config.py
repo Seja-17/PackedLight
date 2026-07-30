@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = Field(default=30, alias="ACCESS_TOKEN_EXPIRE_MINUTES")
     refresh_token_expire_days: int = Field(default=7, alias="REFRESH_TOKEN_EXPIRE_DAYS")
 
-    database_url: str = Field(alias="DATABASE_URL")
+    database_url: str = Field(default="postgresql+psycopg://postgres:postgres@localhost:5432/packedlight", alias="DATABASE_URL")
 
     cors_origins: Annotated[list[str], NoDecode] = Field(
         default_factory=lambda: ["http://localhost:5173"],

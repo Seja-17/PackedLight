@@ -46,14 +46,18 @@ export function Navbar() {
         <div className="flex flex-1 items-center justify-end gap-3 sm:gap-4">
           <CurrencyConverter />
           <NavLink
-            to="/login"
-            className="btn-ghost hidden text-base font-semibold tracking-[0.02em] no-underline sm:inline-flex"
-          >
-            Log in
-          </NavLink>
-          <NavLink to="/signup" className="btn-primary text-base font-semibold tracking-[0.02em] no-underline">
-            Sign up
-          </NavLink>
+  to="/login"
+  className="btn-ghost hidden whitespace-nowrap text-base font-semibold tracking-[0.02em] no-underline sm:inline-flex"
+>
+  Log in
+</NavLink>
+
+<NavLink
+  to="/signup"
+  className="btn-primary whitespace-nowrap text-base font-semibold tracking-[0.02em] no-underline"
+>
+  Sign up
+</NavLink>
         </div>
       </div>
 
